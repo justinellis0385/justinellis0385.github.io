@@ -1,6 +1,119 @@
-body { font-family: Arial, sans-serif; margin: 2em; background: #fcfcfc; }
-header { margin-bottom: 1.5em; }
-nav a { margin-right: 1em; text-decoration: none; color: #0366d6; }
-nav a:hover { text-decoration: underline; }
-section, h1, h2 { margin-top: 1em; }
-footer { margin-top: 3em; color: #888; font-size: 0.9em; }
+/* Clean & Elegant Portfolio Styles for justinellis0385 */
+
+:root {
+  --main-bg: #fafbfc;
+  --accent: #2e3a59;
+  --primary: #3a6ea5;
+  --light: #fff;
+  --border: #e0e4ea;
+  --text: #283046;
+  --muted: #7d8597;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--main-bg);
+  color: var(--text);
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+header {
+  background: var(--light);
+  border-bottom: 1px solid var(--border);
+  padding: 2rem 0 1.2rem 0;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.03);
+}
+
+header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+
+nav {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+nav a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 1.2em;
+  padding: 0.4em 0.7em;
+  border-radius: 5px;
+  transition: background 0.15s, color 0.15s;
+}
+
+nav a:hover, nav a:focus {
+  background: var(--primary);
+  color: var(--light);
+}
+
+section, main {
+  max-width: 700px;
+  margin: 2.5rem auto 0 auto;
+  background: var(--light);
+  padding: 2.2rem 2.4rem;
+  border-radius: 17px;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.08);
+}
+
+h2 {
+  font-weight: 600;
+  color: var(--accent);
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+a {
+  color: var(--primary);
+  transition: color 0.15s;
+}
+
+a:hover, a:focus {
+  color: #174572;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  color: var(--muted);
+  font-size: 0.98em;
+  padding-bottom: 2.5em;
+}
+
+p, ul, li {
+  font-size: 1.07em;
+}
+
+ul {
+  margin-top: 1em;
+  padding-left: 1.2em;
+}
+
+img, iframe, embed {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(44,62,80,0.06);
+}
+
+@media (max-width: 800px) {
+  section, main {
+    margin: 1.2rem 0.4rem 0 0.4rem;
+    padding: 1.2rem 0.8rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
