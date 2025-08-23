@@ -3882,7 +3882,8 @@ input, select, textarea {
 
 	}
 
-	img {
+	span.image.fill img {
 	  max-width: 100%;
 	  height: auto;
 	}
+
