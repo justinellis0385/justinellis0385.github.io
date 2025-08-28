@@ -3887,3 +3887,8 @@ input, select, textarea {
 	  height: auto;
 	}
 
+	/* Styling for images on the blog post page only */
+	#blog-post .image img {
+	    max-width: 100%;
+	    height: auto;
+	}
