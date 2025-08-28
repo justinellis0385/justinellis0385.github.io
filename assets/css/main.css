@@ -3882,9 +3882,21 @@ input, select, textarea {
 
 	}
 
-	/* Styling for images on the blog post page only */
+	/* Rule 1: This makes all images on your website responsive by default. */
+	img {
+	    max-width: 100%;
+	    height: auto;
+	}
+	
+	/* Rule 2: This specifically targets and styles the images within your blog post. */
 	#blog-post .image img {
 	    max-width: 100%;
 	    height: auto;
 	}
-
+	
+	/* Rule 3: This ensures your homepage's intro section retains its unique side-by-side layout, overriding the global image rule where necessary. */
+	.intro .content {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	}
